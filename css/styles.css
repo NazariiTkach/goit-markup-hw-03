@@ -305,6 +305,10 @@ body {
 
 /* Footer */
 
+.footer-list:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .section-footer {
   background-color: var(--secondary-background-color);
   padding: 60px 0;
