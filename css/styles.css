@@ -77,6 +77,22 @@ body {
 
 .logo-link {
   text-decoration: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000000;
 }
 
 .logo-footer {
@@ -88,27 +104,26 @@ body {
   color: var(--white-color);
 }
 
-.logotype {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+.logo-link-footer {
+  display: block;
+  margin-bottom: 11px;
   text-decoration: none;
-  color: var(--accent-color);
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: var(--accent-color);
 }
-.logo {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  color: #000000;
-}
+
+
+
 
 /* Hero */
 
 .hero {
+  padding: 200px 0;
   background-color: var(--secondary-background-color);
 }
 
@@ -130,18 +145,20 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+.container-nav {
+  display: flex;
+
+}
+
 .navigation {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 
 .header-nav {
   display: flex;
   gap: 50px;
-  margin-left: 50px;
+  margin-left: 94px;
   list-style: none;
 }
 
@@ -153,6 +170,8 @@ body {
 }
 
 .header-list {
+  display: block;
+  padding: 32px 0;
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -162,6 +181,8 @@ body {
 }
 
 .header-link {
+  display: block;
+  padding: 32px 0;
   color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
@@ -235,7 +256,6 @@ body {
 
 .card {
   width: 270px;
-  height: 368px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -291,7 +311,6 @@ body {
 }
 
 .footer-nav {
-  margin-top: 20px;
   list-style: none;
   font-style: normal;
 }
@@ -390,17 +409,14 @@ body {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--card-set-gap));
-  margin-left: calc(-1 * var(--card-set-gap));
+  gap: 30px;
   background-color: var(--white-color);
   list-style: none;
 }
 
 .projects-list > .iteam {
   display: block;
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-top: var(--card-set-gap);
-  margin-left: var(--card-set-gap);
+  flex-basis: calc(((100% - 60px) / 3));
 }
 
 .projects-list .title-card {
